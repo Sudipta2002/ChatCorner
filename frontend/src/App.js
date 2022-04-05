@@ -5,8 +5,10 @@ import Homepage from './pages/Homepage';
 import Chatpage from './pages/Chatpage';
 
 function App() {
+  
   return (
     <Router>
+      
       <div className="App">
         <Routes>
           <Route exact path='/' element={<Homepage/>}></Route>
