@@ -3,19 +3,24 @@ import './App.css';
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Chatpage from './pages/Chatpage';
-
+// import { BrowserRouter } from 'react-router-dom';
+import ChatProvider from "./Context/ChatProvider"
 function App() {
   
   return (
+     
     <Router>
       
       <div className="App">
-        <Routes>
-          <Route exact path='/' element={<Homepage/>}></Route>
-          <Route exact path='/chats' element={<Chatpage/>}></Route>
-        </Routes>
+        <ChatProvider>
+          <Routes>
+            <Route exact path='/' element={<Homepage/>}></Route>
+            <Route exact path='/chats' element={<Chatpage/>}></Route>
+          </Routes>
+        </ChatProvider>
       </div>
     </Router>
+      
   );
 
 }
