@@ -20,7 +20,7 @@ const Login = () => {
       toast({
         title: 'Please Fill all the Fields',
         status: 'warning',
-        duration: 5000,
+        duration: 1000,
         isClosable: true,
         position:"bottom",
       });  
@@ -36,9 +36,9 @@ const Login = () => {
       const {data}= await axios.post("/api/user/login",{email,password},
       config);
       toast({
-        title: 'Registration Successfull',
+        title: 'Logged In Successfully',
         status: 'success',
-        duration: 5000,
+        duration: 1000,
         isClosable: true,
         position:"bottom",
       });  
@@ -49,7 +49,7 @@ const Login = () => {
       toast({
         title: 'Error occured',
         status: 'warning',
-        duration: 5000,
+        duration: 1000,
         isClosable: true,
         position:"bottom",
       });  

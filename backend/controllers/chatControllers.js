@@ -11,7 +11,7 @@ const accessChat = asyncHandler(async(req, res) => {
         isGroupChat: false,
         $and: [
             { users: { $elemMatch: { $eq: req.user._id } } },
-            { users: { $elemMatch: { $eq: req.userId } } },
+            { users: { $elemMatch: { $eq: userId } } },
         ]
     }).populate("users", "-password").populate("latestMessage");
     isChat = await User.populate(isChat, {
