@@ -89,7 +89,7 @@ const GroupChatModal = ({children}) => {
                 title: "Yay New Group Created!",
                 status: "success",
                 duration: 2000,
-                isClosable: true,
+                isClosable: true,   
                 position: "bottom",
               });
         } catch (error) {
@@ -179,7 +179,7 @@ const GroupChatModal = ({children}) => {
                 <Button colorScheme='blue' onClick={handleSubmit}>
                   Create Chat
                 </Button>
-                <Button variant='ghost'>Secondary Action</Button>
+               
               </ModalFooter>
             </ModalContent>
           </Modal>
