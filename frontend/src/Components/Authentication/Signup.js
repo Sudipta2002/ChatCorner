@@ -117,7 +117,7 @@ const Signup = () => {
     }
   }
   return (
-  <VStack spacing='5px' color="black">
+  <VStack spacing='5px' color="black" fontFamily="Permanent Marker">
     <FormControl id='first-name' isRequired>
       <FormLabel>Name</FormLabel>
         <Input borderColor="black" color="black" placeholder='Enter your Name' onChange={(e)=>{setName(e.target.value)}}/>
@@ -138,7 +138,6 @@ const Signup = () => {
         </InputRightElement>
       </InputGroup>
     </FormControl>
-
     <FormControl id='second-password' isRequired>
       <FormLabel>Confirm Password</FormLabel>
       <InputGroup>
@@ -155,7 +154,7 @@ const Signup = () => {
       <FormLabel>Upload Your Pic</FormLabel>
         <Input type="file"p={1.5} accept="image/*" color="black" placeholder='Enter your Pic' onChange={(e)=>{postDetails(e.target.files[0])}}/>
     </FormControl>
-    <Button colorScheme={"blue"} width="100%" style={{marginTop:15}} onClick={submitHandler}isLoading={loading}>
+    <Button colorScheme={"gray"} width="100%" style={{marginTop:15}} onClick={submitHandler}isLoading={loading}>
               Sign Up
     </Button>
   </VStack>

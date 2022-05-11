@@ -103,19 +103,19 @@ const SideDrawer = () => {
         d="flex"
         justifyContent={'space-between'}
         alignItems="center"
-        bg="white"
+        bg="gray.800"
         w="100%"
         // h="91.5vh"
         padding='5px 10px 5px 10px'
         borderWidth={"5px"}
         >
             <Tooltip label="Search Users to chat" hasArrow placement='bottom-end'>
-                <Button variant="ghost" onClick={onOpen}>
-                <i className="fa-solid fa-magnifying-glass"></i>
-                <Text d={{base:"none",md:"flex"}} px="4"> Search User</Text>
+                <Button variant="ghost"bg="whitesmoke" onClick={onOpen}>
+                <i className="fa-solid fa-magnifying-glass" color="white"></i>
+                <Text d={{base:"none",md:"flex"}} fontSize="2xl" px="4"fontFamily="Permanent Marker" color={"gray.800"}> Search User</Text>
                 </Button>
             </Tooltip>
-            <Text fontSize={"2xl"}fontFamily="Work sans">CHAT-SHALA</Text>
+            <Text fontSize={"2xl"}color="white"fontFamily="Permanent Marker">CHAT-SHALA</Text>
             <div>
               <Menu>
                 
@@ -136,11 +136,11 @@ const SideDrawer = () => {
                 <MenuButton p={1}>
                  
                  
-                  <NotificationBadge
+                  <NotificationBadge 
                     count={notification.length}effect={Effect.SCALE}/> 
                     {/* )} */}
                   
-                  <BellIcon fontSize={"2xl"}m={1}/>
+                  <BellIcon color={"white"} fontSize={"2xl"}m={1}/>
                 </MenuButton>
               </Menu>
               <Menu>
@@ -149,24 +149,24 @@ const SideDrawer = () => {
                 </MenuButton>
                 <MenuList>
                 <ProfileModal user={user}>
-                  <MenuItem>My Profile</MenuItem>
+                  <MenuItem bg="gray.100"fontFamily="Permanent Marker">My Profile</MenuItem>
                 </ProfileModal>
                   <MenuDivider/>
-                  <MenuItem onClick={logoutHandler}>LogOut</MenuItem>
+                  <MenuItem bg="gray.100"fontFamily="Permanent Marker" onClick={logoutHandler}>LogOut</MenuItem>
                 </MenuList>
               </Menu>
             </div>
         </Box>
-        <Drawer placement='left' onClose={onClose} isOpen={isOpen}>
+        <Drawer placement='left'bg="gray.100" onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />
             <DrawerContent>
               {/* <DrawerCloseButton /> */}
-              <DrawerHeader borderBottomWidth={"1px"}>Search Users</DrawerHeader>
+              <DrawerHeader bg="gray.700" color={"white"} fontFamily="Permanent Marker"fontSize={"2xl"} borderBottomWidth={"1px"}>Search Users</DrawerHeader>
 
               <DrawerBody>
                 <Box d="flex" pb={2}>
                   <Input placeholder='Search by name or email' mr={2} value={search} onChange={(e)=>setSearch(e.target.value)}/>
-                  <Button onClick={handleSearch}>Go</Button>
+                  <Button onClick={handleSearch}  fontFamily="Permanent Marker">Go</Button>
                 </Box>
                 {loading ? <ChatLoading/>:
                 (

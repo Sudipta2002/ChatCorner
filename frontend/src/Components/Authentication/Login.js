@@ -57,7 +57,7 @@ const Login = () => {
     }
   }
   return (
-    <VStack spacing='5px' color="black">
+    <VStack spacing='5px' color="black" fontFamily="Permanent Marker">
     <FormControl id='email' isRequired>
       <FormLabel>Email</FormLabel>
         <Input borderColor="black" value={email}color="black" placeholder='Enter your Email' onChange={(e)=>{setEmail(e.target.value)}}/>
@@ -73,9 +73,9 @@ const Login = () => {
         </InputRightElement>
       </InputGroup>
     </FormControl>
-    <Button colorScheme={"blue"} isLoading={loading} width="100%" style={{marginTop:15}} onClick={submitHandler}>
+    <Button bg="#ffc107" isLoading={loading} width="100%" style={{marginTop:15}} onClick={submitHandler}>
               Login     </Button>
-    <Button colorScheme={"red"} width="100%" style={{marginTop:15}} onClick={()=>{ setEmail("guest@example.com"); setPassword("123456789")}}>
+    <Button colorScheme={"gray"} width="100%" style={{marginTop:15}} onClick={()=>{ setEmail("guest@example.com"); setPassword("123456789")}}>
               Login as a Guest User
     </Button>
   </VStack>

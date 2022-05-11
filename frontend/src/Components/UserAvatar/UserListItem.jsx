@@ -7,7 +7,7 @@ const UserListItem = ({user,handleFunction}) => {
     <Box
     onClick={handleFunction}
     cursor="pointer"
-    bg="#E8E8E8"
+    bg="gray.800"
     _hover={{
       background: "#38B2AC",
       color: "white",
@@ -29,8 +29,8 @@ const UserListItem = ({user,handleFunction}) => {
       src={user.pic}
     />
     <Box>
-      <Text>{user.name}</Text>
-      <Text fontSize="xs">
+      <Text color={"white"} fontFamily={"Permanent Marker"}>{user.name}</Text>
+      <Text color={"white"} fontFamily={"Permanent Marker"} fontSize="xs">
         <b>Email : </b>
         {user.email}
       </Text>

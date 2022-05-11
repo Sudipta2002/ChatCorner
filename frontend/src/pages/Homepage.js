@@ -21,13 +21,13 @@ const Homepage = () => {
         d="flex" 
         justifyContent="center"
         p={3}
-        bg={"white"}
+        bg="#ffc107"
         w="100%"
         m="40px 0 15px 0" 
         borderRadius="lg" 
         borderWidth="1px"
        >
-        <Text fontSize={'5xl'} fontFamily="Work sans" color="black">CHAT-SHALA</Text>
+        <Text fontSize={'5xl'} fontFamily="Permanent Marker" color="black">CHAT-SHALA</Text>
       </Box>
       <Box
         bg={"white"}
@@ -37,7 +37,7 @@ const Homepage = () => {
         p={4}
         color="black"
       >
-        <Tabs variant='soft-rounded' colorScheme='green'>
+        <Tabs variant='soft-rounded' colorScheme='yellow'>
   <TabList mb="1em">
     <Tab width="50%">Login</Tab>
     <Tab width="50%">SignUP</Tab>
