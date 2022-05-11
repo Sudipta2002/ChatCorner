@@ -27,7 +27,7 @@ const Homepage = () => {
         borderRadius="lg" 
         borderWidth="1px"
        >
-        <Text fontSize={'5xl'} fontFamily="Permanent Marker" color="black">CHAT-SHALA</Text>
+        <Text fontSize={{base:"28px",md:"50px"}} fontFamily="Permanent Marker" color="black">CHAT-SHALA</Text>
       </Box>
       <Box
         bg={"white"}

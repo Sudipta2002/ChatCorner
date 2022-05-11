@@ -115,7 +115,7 @@ const SideDrawer = () => {
                 <Text d={{base:"none",md:"flex"}} fontSize="2xl" px="4"fontFamily="Permanent Marker" color={"gray.800"}> Search User</Text>
                 </Button>
             </Tooltip>
-            <Text fontSize={"2xl"}color="white"fontFamily="Permanent Marker">CHAT-SHALA</Text>
+            <Text fontSize={{base:"20px",md:"25px"}}color="white"fontFamily="Permanent Marker">CHAT-SHALA</Text>
             <div>
               <Menu>
                 
